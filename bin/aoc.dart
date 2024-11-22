@@ -9,28 +9,13 @@ import 'package:dart_console/dart_console.dart';
 
 /// Map holding all the solution classes.
 final Map<int, GenericDay> possibleDays = {
-  0: Day00(),
-  1: Day01(),
-  2: Day02(),
-  3: Day03(),
-  4: Day04(),
-  5: Day05(),
-  6: Day06(),
-  7: Day07(),
-  8: Day08(),
-  9: Day09(),
-  11: Day11(),
-  10: Day10(),
-  15: Day15(),
-  16: Day16(),
-  18: Day18(),
-  21: Day21(),
+  0: Day00()
   //{add_me}
 };
 
 void main(List<String> args) {
   var env = DotEnv(includePlatformEnvironment: true)..load();
-  int year = int.parse(env.getOrElse("AOC_YEAR", () => "2023"));
+  int year = int.parse(env.getOrElse("AOC_YEAR", () => "2024"));
   int dayOfMonth = DateTime.now().day;
   final parser = ArgParser();
   bool allDays = false;

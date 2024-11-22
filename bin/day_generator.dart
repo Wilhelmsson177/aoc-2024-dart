@@ -62,7 +62,7 @@ void main(List<String> args) async {
 
   talker.debug("You have input the args ${argResults.arguments}");
   // Inform user which day will be generated
-  talker.good(
+  talker.info(
       "Day $dayOfMonth will be generated.${onlyInputCreation ? ' (Just the input data)' : ''}");
 
   // Create input file
@@ -104,13 +104,13 @@ void main(List<String> args) async {
 
     addDayToMain(dayOfMonth);
   }
-  talker.good('All set, Good luck!');
+  talker.info('All set, Good luck!');
 }
 
 Future<void> _downloadInputFile(
     int year, int dayOfMonth, String session) async {
   // Create input file
-  talker.good('Loading input from adventofcode.com...');
+  talker.info('Loading input from adventofcode.com...');
   try {
     final request = await HttpClient().getUrl(
         Uri.parse('https://adventofcode.com/$year/day/$dayOfMonth/input'));
