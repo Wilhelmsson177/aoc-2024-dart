@@ -12,7 +12,7 @@ import 'package:aoc/logger.dart';
 void main(List<String> args) async {
   var env = DotEnv(includePlatformEnvironment: true)
     ..load([".env", ".env.secrets"]);
-  int year = int.parse(env.getOrElse("AOC_YEAR", () => "2019"));
+  int year = int.parse(env.getOrElse("AOC_YEAR", () => "2024"));
   String session = env.getOrElse("AOC_SESSION", () => "");
   initializeLogging("debug");
 
