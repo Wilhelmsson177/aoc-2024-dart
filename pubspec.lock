@@ -549,18 +549,18 @@ packages:
     dependency: "direct main"
     description:
       name: talker
-      sha256: a7ae7055459aa236de1e35c47f76f56455824df69e3d14c2e4f223a999d99826
+      sha256: "9d1c777f12ac49db3bf7b3e3977a09041a23da0fc65b7c12f0530c2045128104"
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.5"
+    version: "4.4.7"
   talker_logger:
     dependency: transitive
     description:
       name: talker_logger
-      sha256: "3f8d051e5821c4aa3c27efe8204829dde128724cbd0294ae3cee76b097cf2cbb"
+      sha256: e2b59c1708c2677d15017c1b248357a6f55c68bd4c415e878ff5addaba8aaab4
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.0"
+    version: "4.4.7"
   term_glyph:
     dependency: transitive
     description:
