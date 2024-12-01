@@ -1,12 +1,16 @@
 # Advent of Code 2024 using Dart 3.5
 
-![](https://img.shields.io/badge/day%20📅-22-blue)![](https://img.shields.io/badge/days%20completed-14-red)![](https://img.shields.io/badge/stars%20⭐-32-yellow)
+![](https://img.shields.io/badge/day%20📅-1-blue)![](https://img.shields.io/badge/days%20completed-1-red)![](https://img.shields.io/badge/stars%20⭐-2-yellow)
 
 
 The template is based on the idea of https://github.com/S-ecki/AdventOfCode-Starter-Dart. This year I will pace myself a bit and do it, when I have time. So probably only on the weekends. I am not reaching for the leaderboard.
 
 <!--- advent_readme_stars table --->
+## 2024 Results
 
+| Day | Part 1 | Part 2 |
+| :---: | :---: | :---: |
+| [Day 1](https://adventofcode.com/2024/day/1) | ⭐ | ⭐ |
 <!--- advent_readme_stars table --->
 
 ## Diary
