@@ -21,6 +21,9 @@
     extensions = [
       # "vscodevim.vim"
       "Dart-Code.dart-code"
+      "Dart-Code.flutter"
+      "github.vscode-github-actions"
+      "GitHub.vscode-pull-request-github"
     ];
 
     # Enable previews

@@ -9,7 +9,7 @@ import 'package:dart_console/dart_console.dart';
 
 /// Map holding all the solution classes.
 final Map<int, GenericDay> possibleDays = {
-  0: Day00()
+  1: Day01(),
   //{add_me}
 };
 
