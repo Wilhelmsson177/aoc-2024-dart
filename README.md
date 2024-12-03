@@ -14,3 +14,7 @@ The template is based on the idea of https://github.com/S-ecki/AdventOfCode-Star
 ### Day 01
 
 It was the expected easy start, but I had to get a bit going on Dart again. Did it with a for loop initially and then moved on towards a folding into a Columns type.
+
+### Day 02
+
+Solution was not that hard and it works on my examples, but the edge cases are not working. Might fix it later.
