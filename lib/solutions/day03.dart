@@ -1,5 +1,4 @@
 import 'package:aoc/index.dart';
-import 'package:aoc/logger.dart';
 
 class Day03 extends GenericDay {
   final String inType;
@@ -27,15 +26,13 @@ class Day03 extends GenericDay {
     int sum = 0;
     bool doIt = true;
     for (var match in checker.allMatches(input)) {
-      talker.debug(match.group(0));
-      if (match.group(0) == "do()") {
+      final matchGroup = match.group(0)!;
+      if (matchGroup == "do()") {
         doIt = true;
-      } else if (match.group(0) == "don't()") {
+      } else if (matchGroup == "don't()") {
         doIt = false;
-      } else {
-        if (doIt) {
-          sum += int.parse(match.group(1)!) * int.parse(match.group(2)!);
-        }
+      } else if (doIt) {
+        sum += int.parse(match.group(1)!) * int.parse(match.group(2)!);
       }
     }
     return sum;
