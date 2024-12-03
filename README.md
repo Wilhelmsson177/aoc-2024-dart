@@ -25,3 +25,6 @@ It was the expected easy start, but I had to get a bit going on Dart again. Did 
 
 Solution was not that hard and it works on my examples, but the edge cases are not working. Might fix it later.
 
+### Day 03
+
+I had some problems with the regex handling in Dart, but it was an easy exercise.
