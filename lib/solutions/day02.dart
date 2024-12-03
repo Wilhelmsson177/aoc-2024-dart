@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:aoc/index.dart';
 import 'package:aoc/logger.dart';
