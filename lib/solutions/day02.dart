@@ -1,6 +1,4 @@
-
 import 'package:aoc/index.dart';
-import 'package:aoc/logger.dart';
 
 class Day02 extends GenericDay {
   final String inType;
@@ -18,30 +16,27 @@ class Day02 extends GenericDay {
   @override
   int solvePartA() {
     final input = parseInput();
-    talker.debug(input);
-    talker.debug(input.where(checkList));
     return input.where(checkList).length;
   }
 
   @override
   int solvePartB() {
     final input = parseInput();
-    talker.debug(input);
-    talker.debug(input.where(checkSlightlyOffList));
     return input.where(checkSlightlyOffList).length;
   }
 
   bool checkSlightlyOffList(List<int> report) {
-    //check that all elements are decreasing
-    var check = report.slice(1);
-    var checks =
-        zip([report, check]).map((pair) => (pair[0] - pair[1])).toList();
-    var removedOffs = checks.where((e) => e.abs() <= 3).toList();
-    talker.debug(removedOffs);
-    return (checks.length == removedOffs.length + 1 ||
-            checks.length == removedOffs.length) &&
-        (removedOffs.every((e) => [1, 2, 3].contains(e)) ||
-            removedOffs.every((e) => [-1, -2, -3].contains(e)));
+    return createSublistsWithRemoval(report).any(checkList);
+  }
+
+  List<List<int>> createSublistsWithRemoval(List<int> originalList) {
+    List<List<int>> sublists = [];
+    for (int i = 0; i < originalList.length; i++) {
+      List<int> sublist = List.from(originalList);
+      sublist.removeAt(i);
+      sublists.add(sublist);
+    }
+    return sublists;
   }
 
   bool checkList(List<int> report) {
