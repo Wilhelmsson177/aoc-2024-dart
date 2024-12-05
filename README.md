@@ -28,3 +28,7 @@ Solution was not that hard and it works on my examples, but the edge cases are n
 ### Day 03
 
 I had some problems with the regex handling in Dart, but it was an easy exercise.
+
+### Day 04
+
+Cool puzzle, Part two was even a bit easier I guess. I did a lot of copy paste, but it worked.
