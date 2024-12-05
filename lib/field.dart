@@ -117,6 +117,15 @@ class Field<T> {
     return Field<T>(newField);
   }
 
+  /// Returns the Value at the coordiantes if on field, else returns the default value.
+  T getValueSafelyAt(int x, int y, T defaultValue) {
+    if (isOnField(Position(x, y))) {
+      return getValueAtPosition(Position(x, y));
+    } else {
+      return defaultValue;
+    }
+  }
+
   @override
   String toString() {
     String result = '';
