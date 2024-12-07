@@ -33,3 +33,7 @@ I had some problems with the regex handling in Dart, but it was an easy exercise
 ### Day 04
 
 Cool puzzle, Part two was even a bit easier I guess. I did a lot of copy paste, but it worked.
+
+### Day 07
+
+The idea about the recursion came to my mind early. But I did not have the time to work on it all day long. Part 2 was pretty straight forward, because of the setup in Part 1. Nice puzzle.
